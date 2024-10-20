@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Recipe Book Application</title>
+</head>
+
+<body class="bg-gray-100">
+    <header class="p-4 bg-blue-500 text-white text-center">
+        <h1 class="text-xl">Recipe Book</h1>
+    </header>
+    
+    <main class="p-6">
+        <section id="recipelist" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            
+        </section>
+
+        <section class="mt-6">
+            <h2 class="text-2xl mb-4">Add a new book</h2>
+               <form id="recipeForm" class="space-y-4">
+                <div class="pb-2">
+                    <label  class="blook text-lg font-semibold mb-2">recipe Title</label>
+                    <input type="text" id="recipeTitle" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    placeholder="Enter recipe title">
+                </div>
+    
+                <div class="pb-2">
+                    <label  class="blook text-lg font-semibold pb-[2px]">Ingredients</label>
+                    <textarea id="recipeIngredients" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    placeholder="Enter recipe Ingredients"></textarea>
+                </div>
+    
+                <div class="pb-2">
+                    <label  class="blook text-lg font-semibold pb-[2px]">Steps</label>
+                    <textarea id="recipeStep" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    placeholder="Enter recipe Steps"></textarea>
+                </div>
+    
+                <button type="submit" id="Addrecipe" class="bg-green-500 text-white font-thin px-3 py-2 mt-2 rounded-lg">Add recipe</button>
+               </form>
+           
+        </section>
+    </main>
+
+    <footer class="p-4 bg-gray-700 text-white text-center">
+       <p> &copy;2024 Recipe Book Application</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
