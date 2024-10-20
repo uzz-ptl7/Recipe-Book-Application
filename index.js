@@ -1,3 +1,4 @@
+// .................................Array of Objects..................................................
 const recipes = [
     {
         title: "Spaghetti Bolognese",
@@ -16,6 +17,7 @@ const recipes = [
     },
 ];
 
+// ..............................................Code to create and Display Recipe Cards........................................
 const displayRecipes = () => {
     const recipelist = document.querySelector("#recipelist");
     recipelist.innerHTML = "";
@@ -35,6 +37,7 @@ const displayRecipes = () => {
     });
 }
 
+// ..............................................Code to Add Recipe........................................
 const addRecipe = (event) => {
     event.preventDefault();
     const recipeTitle = document.getElementById("recipeTitle").value.trim();
@@ -64,6 +67,7 @@ const addRecipe = (event) => {
     }
 }
 
+// ..............................................Code to make Add Recipe Button Functional........................................
 document.querySelector("#addRecipe").addEventListener("click", addRecipe);
 
 displayRecipes();
