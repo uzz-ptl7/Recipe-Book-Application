@@ -6,44 +6,44 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Recipe Book Application</title>
 </head>
-<body class="bg-gray-100">
-    <header class="p-4 bg-blue-500 text-white text-center">
-        <h1 class="text-xl">Recipe Book</h1>
+<body class="bg-black text-gray-400">
+    <header class="p-4 bg-blue-700 text-black text-center font-bold">
+        <h1 class="text-2xl">Recipe Book</h1>
     </header>
     
     <main class="p-6">
-        <a href="./recipe.html" class="px-2 py-2 bg-blue-500 my-2 rounded-lg text-white">View current recipes</a>
+        <a href="./recipe.html" class="px-2 py-2 bg-blue-700 my-2 rounded-lg text-white">View current recipes</a>
 
         <section class="mt-6">
             <h2 class="text-2xl mb-4">Add a new recipe</h2>
             <form id="recipeForm" class="space-y-4">
                 <div class="pb-2">
                     <label class="block text-lg font-semibold mb-2">Recipe Title</label>
-                    <input type="text" id="recipeTitle" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    <input type="text" id="recipeTitle" class="border bg-gray-300 placeholder-gray-700 p-2 w-full rounded-lg focus:outline-none" 
                     placeholder="Enter recipe title">
                     <span id="titleError" class="text-red-600 font-semibold hidden">Recipe title is required</span>
                 </div>
     
                 <div class="pb-2">
                     <label class="block text-lg font-semibold pb-[2px]">Ingredients</label>
-                    <textarea id="recipeIngredients" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    <textarea id="recipeIngredients" class="border bg-gray-300 placeholder-gray-700 p-2 w-full rounded-lg focus:outline-none" 
                     placeholder="Enter recipe ingredients"></textarea>
                     <span id="ingredientsError" class="text-red-600 font-semibold hidden">Recipe ingredients are required</span>
                 </div>
     
                 <div class="pb-2">
                     <label class="block text-lg font-semibold pb-[2px]">Steps</label>
-                    <textarea id="recipeSteps" class="border p-2 w-full rounded-lg focus:outline-none" 
+                    <textarea id="recipeSteps" class="border bg-gray-300 placeholder-gray-700 p-2 w-full rounded-lg focus:outline-none" 
                     placeholder="Enter recipe steps"></textarea>
                     <span id="stepsError" class="text-red-600 font-semibold hidden">Recipe steps are required</span>
                 </div>
     
-                <button type="submit" id="addRecipe" class="bg-green-500 text-white font-thin px-3 py-2 mt-2 rounded-lg">Add Recipe</button>
+                <button type="submit" id="addRecipe" class="bg-green-800 text-white font-thin px-3 py-2 mt-2 rounded-lg">Add Recipe</button>
             </form>
         </section>
     </main>
 
-    <footer class="p-4 bg-gray-700 text-white text-center">
+    <footer class="p-4 bg-blue-700 text-black text-center font-bold">
        <p>&copy; 2024 Recipe Book Application</p>
     </footer>
 

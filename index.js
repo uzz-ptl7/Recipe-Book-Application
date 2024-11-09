@@ -9,9 +9,9 @@ const displayRecipes = () => {
             const recipeCard = document.createElement("div");
             recipeCard.classList.add("recipe-card");
             recipeCard.innerHTML = `
-                <div class="border border-black rounded-xl shadow-xl p-2">
+                <div class="border bg-blue-300 rounded-xl p-2">
                 <h2 class="text-lg font-bold">${recipe.title}</h2>
-                <p class="text-sm text-gray-400 font-thin"><strong>Ingredients: </strong>${recipe.ingredients}</p>
+                <p class="text-sm text-gray-800 font-thin"><strong>Ingredients: </strong>${recipe.ingredients}</p>
                 <p class="text-sm font-thin"><strong>Steps: </strong>${recipe.steps}</p>
                 <button class="bg-blue-500 text-white px-2 py-1 rounded mt-2" onclick="editRecipe(${index})">Edit</button>
                 <button class="bg-red-500 text-white px-2 py-1 rounded m-2" onclick="deleteRecipe(${index})">Delete</button>
